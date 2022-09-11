@@ -1,0 +1,315 @@
+body {
+    font-family: 'Open Sans';
+}
+
+#home {
+    height: 41em;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Home*/
+
+#home {
+    background: url('../images/homeBg.svg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-para {
+    width: 27em;
+    margin: 4em 0 2em 3.5em;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 167%;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.btn-blue {
+    width: 8%;
+    margin-left: 5.5em;
+    padding: .5%;
+    padding-left: 1.2%;
+    font-family: 'Open Sans';
+    background: #0193DC;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.btn-blue:hover {
+    color: #0193DC;
+    background-color: transparent;
+    border: 1px solid #0193DC;
+}
+
+/*About*/
+
+#about {
+    margin-top: 10px;
+    padding: 3% 10%;
+}
+
+.landingPage-about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+}
+
+.landingPage-about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.landingPage-about-title,.landingPage-academics-tile,.gallery-title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 48px;
+}
+
+.landingPage-about-intro p,.landingPage-academics-intro p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 200%;
+    letter-spacing: 0.5px;
+    color: #808488;
+}
+
+.knowMore-btn .btn-primary {
+    background-color: #0193DC;
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 18px;
+    padding: 1em 2em;
+}
+
+/*Academeics*/
+
+#academics{
+    margin-top: 10px;
+    padding: 3% 10%;
+    background-color: #F9FBFD;
+}
+
+.landingPage-academics-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+.landingPage-academics-content{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+/* .landingPage-academics-intro{
+    width: 80%;
+} */
+
+.landingPage-academics-info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    width: 80em;
+}
+.landingPage-academics-info .academy-card{
+    background-color: #fff;
+    height: 250px;
+    width: 250px;
+    padding: 1%;
+}
+
+.academy-card{box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.academy-card-title{
+    margin: 0 10%;
+    font-weight: 700;
+}
+
+.academy-card-desc{
+    margin: 10%;
+    color: #808488;
+    font-size: 0.8rem;
+}
+
+
+.verticalLine {
+    border-right: 1px solid #D2E0EA;
+    height: 400px;
+}
+
+/*Gallery*/
+#gallery{  
+    margin-top: 10px;
+    padding: 3% 10%;
+}
+
+.gallery-wrapper{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 500px;
+    padding: 0% 10% 0 0%;
+}
+
+.gallery-card img{
+    height: 325px;
+    width: 325px;
+}
+
+/* Media */
+
+@media (min-width: 400px) and (max-width:500px) {
+
+    #home {
+        height: 35em;
+        width: 100%;
+    }
+
+    .intro-para {
+        font-size: 2.3rem;
+        width: 18em;
+        margin: 2em 0 2em 3em;
+    }
+
+}
+
+@media (max-width:400px) {
+
+    #home {
+        height: 70em;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 648px) {
+
+    #home {
+        height: 75em;
+        width: 100%;
+    }
+
+    .intro-para {
+        font-size: 3.5rem;
+        width: 23em;
+        margin: 3em 0 0em 1.8em;
+        padding-left: 0em;
+    }
+
+    .btn-blue {
+        width: 18%;
+        font-size: 3em;
+        margin: 2em 0em 2em 2em;
+    }
+
+    .landingPage-about-container {
+        flex-direction: column;
+    }
+    
+    .landingPage-about-video img{
+        width: 80em;
+    } 
+    
+    .landingPage-about-content {
+        margin-top: 6em;
+    }
+
+    .landingPage-about-title h1,.landingPage-academics-tile h1,.gallery-title h1{
+        font-size: 5.2rem;
+        font-weight: bold;
+    }
+    
+    .landingPage-about-intro p,.landingPage-academics-intro p{
+        font-size: 4rem;
+        color: #808488;
+    }
+    
+    .knowMore-btn .btn-primary {
+        font-size: 3rem;       
+    }
+
+    .landingPage-academics-container{
+        flex-direction: column-reverse;
+    }
+
+    .landingPage-academics-tile h1,.gallery-title h1{
+        margin-top: 10%;
+    }
+
+    .verticalLine {
+        border-right: none;
+        height: 100%;
+    }
+
+    .landingPage-academics-info{
+        margin-top: 10%;
+        flex-wrap: nowrap;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .landingPage-academics-info .academy-card{
+        width: 1000px;
+        height: 1000px;
+        flex: 0 0 auto;
+    }
+
+    .academy-card-logo{
+        height: 350px;
+    }
+
+    .academy-card-title{
+        font-size: 4rem;
+    }
+
+    .academy-card-desc{
+        font-size: 2.5rem;
+    }
+
+    #gallery{  
+        margin-top: 10px;
+        padding: 3% 0% ;
+    }
+
+    .gallery-title{
+        margin-left: 10%;
+    }
+    .gallery-wrapper{
+        padding: 0;
+    }
+    .hide{
+        display: none;
+    }
+
+    .gallery-card img{
+        height: 400px;
+        width: 800px;
+        margin-right: 0;
+        margin-bottom: 10%; 
+    }
+    .gal-btn{
+        margin-top: 30% !important;
+        padding: 0 35%  !important;
+    }
+}
