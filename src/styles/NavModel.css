@@ -1,0 +1,82 @@
+.modalBackground {
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContainer {
+    width: 100em;
+    height: 850px;
+    border-radius: 12px;
+    background-color: #F5F5F5;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin-top: 35em;
+    margin-left: -1em;
+  }
+  
+  .modalContainer .title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5em 5em 0 0;
+  }
+  
+  .titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 75px;
+    width: 75px;
+}
+  .modalContainer .body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .mobile-options {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 0;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .optionM {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 2em;
+  }
+
+  .optionM a, a{
+    color: #000;
+    width: 100%;
+    font-family: 'Open Sans';
+  }
+
+  .optionM a:hover,  .optionM .active{
+    font-weight: bold;
+  }
+
+  .optionM hr{
+    color: #000;
+    width: 100%;
+  }

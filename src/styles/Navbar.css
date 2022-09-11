@@ -1,0 +1,118 @@
+/*Desktop View*/
+.header {
+  display: flex;
+  background: transparent;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  height: 80px;
+}
+.logo-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-options {
+  list-style-type: none;
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.mobile-option {
+  display: none;
+}
+
+.option{
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.nav-options .option a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-options .active,.nav-options .show>.nav-option a,.nav-option a:focus, .options ,option a:hover {
+  color: #fff;
+  font-weight: 700;
+}
+
+.nav-options .active::after,.nav-options .show>.option .a,.option a:after {
+  content: '';
+  display: block;
+  margin: 4px auto;
+  height: 2px;
+  width: 0px;
+  color: #fff;
+  font-weight: 700;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.nav-options .active::after,.nav-options .show>.option .a,.option a:hover:after {
+  width: 50%;
+  background: #fff;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+
+@media (max-width: 648px) {
+  /*Mobile View */
+  .header {
+    padding: 5% 20px;
+  }
+  .logo-nav{
+    width: 20%;
+    padding: 2%;
+  }
+  .logo{
+    height: 20em;
+    width: 20em;
+  }
+  .mobile-menu{
+    padding: 5%;
+  }
+
+  .nav-options{
+     display: none;
+  }
+
+  .menu-icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+.mobile-menu {
+  display: block;
+}
+
+.openModalBtn{
+  margin-right: 5em;
+}
+ 
+@media (min-width: 1200px){
+  .nav-options{
+    padding-right: 60px;
+  }
+}
