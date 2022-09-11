@@ -1,0 +1,200 @@
+/* The footer is fixed to the bottom of the page */
+footer a {
+	text-decoration: none;
+	color: #000;
+}
+
+@media (max-height:648px) {
+	footer {
+		position: static;
+	}
+
+	header {
+		padding-top: 40px;
+	}
+}
+
+
+.footer-distributed {
+	background: #F9F9F9;
+	font-size: 15px;
+	line-height: 24px;
+	color: #000;
+	font-family: 'Open Sans';
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	padding: 50px 100px 60px 100px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+	width: 40%;
+}
+
+.footer-distributed h6 {
+	margin: 0;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.2rem;
+	line-height: 28px;
+	letter-spacing: 0.37884px;
+	color: #0C101A;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img {
+	width: 30%;
+}
+
+.contact-details {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 24px;
+	letter-spacing: 0.3px;
+	color: #0C101A;
+	margin: 1.25em 1.5em;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+	width: 25%;
+	margin-left: 30px;
+}
+
+
+.footer-distributed .footer-center .footer-links li a {
+	color: #737373;
+	text-decoration: none;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 200%;
+	letter-spacing: 0.25256px;
+	color: #3A4E50;
+}
+
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+	color: #000;
+	margin: 20px 0 12px;
+	list-style: none;
+}
+
+.footer-distributed .footer-links li{
+	margin-top: 15px;
+}
+
+.footer-distributed .footer-links a {
+	display: inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color: inherit;
+}
+
+.school-map{
+	margin-top: 5%;
+}
+
+.footer-distributed .footer-company-name {
+	color: #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin-top: 5em;
+	text-align: center;
+}
+
+.footer-links{
+	padding: 0;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+	width: 30%;
+}
+
+
+.footer-distributed .footer-right p {
+	display: inline-block;
+	color: #000;
+	vertical-align: middle;
+	margin: 0;
+}
+
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+@media (max-width: 648px) {
+
+	.footer-distributed h6 {
+		font-size: 2.8rem;
+	}
+
+	.contact-details {
+		font-size: 2.5rem;
+	}
+
+	.footer-distributed .footer-center .footer-links{
+		margin-top: 3%;
+	}
+
+	.footer-distributed .footer-center .footer-links li a {
+		font-size: 2.5rem;
+	}
+
+	.footer-distribute .footer-right iframe{
+		width: 600PX !important;
+		height: 450PX !important;
+	}
+
+	.footer-distribute .footer-right{
+		width: 600PX !important;
+		height: 450PX !important;
+	}
+
+	.school-map{
+		margin-top: 5%;
+    	width: 25em;
+		height: 10em;
+	}
+	/* Footer links */
+	.footer-distributed .footer-company-name {
+		font-size: 30px;
+	}
+
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right,
+	.footer-distribute {
+		display: block;
+		width: 100%;
+		margin-bottom: 100px;
+		text-align: center;
+		font-size: 3em;
+	}
+
+	.footer-distributed .footer-center i {
+		margin-left: 0;
+	}
+
+}
